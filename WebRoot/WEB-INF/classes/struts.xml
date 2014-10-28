@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<include file="struts-default.xml"/>
+<package name="pack" extends="struts-default">
+
+
+<action name="success" >
+<result>/userpage.jsp</result>
+</action>
+
+
+<action name="search" class="pack.Fuction" method="searchteacher" >
+<result>/result.jsp</result>
+</action>
+
+<action name="book" class="pack.Fuction" method="booktime" >
+<result>/index.jsp</result>
+</action>
+
+
+
+
+</package>
+</struts>  
